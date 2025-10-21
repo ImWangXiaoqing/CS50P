@@ -215,9 +215,83 @@ def canapplyvisa(age,country):
         return"you can't apply"
 
 example=canapplyvisa(18,"India") #oh,no how to copy words use keyboard, in Mac you can use, "Command + C" to copy and "Command+V" to pastei  i do it but appear something wrong,you see, yes, I saw...I don't know what happened, but I will check and tell you later....ok
-print(example)o
+print(example)
 #so, understood all concepts?I'm closing the session for now, going to eat dinner. will teach somethings later, are you ok with it?ok byebye i will miss you,hhhh, hhhhh, thank you!
 
 
 
-#write ahead....question == =  diff? = is used for numbers, and == for strings.....
+#write ahead....question == =  diff? Ans: = is used for numbers, and == for strings.....
+
+
+
+
+######################################################################################
+#                           Welcome Xiaoqing!                       (10.21.2025)
+#topics we will learn today:
+#                  1. Loops
+#                  2. Lists
+######################################################################################
+
+#ready? or want a few mins to review code?ready, okay, nice
+
+#______________________________Loops_________________________#
+#i think you know little bit about these? since you mentioned it once...emm...i remmember a little ,"for"loop, s
+#okay, we can start.....
+
+#Loops are nothing but simple function, built into python, that provides us do recurring tasks simply using word "for"
+#for is named because it works on conditions, like count 5, then stops etc.
+#While loop is also there, both can do same tasks, but sometimes one is better, sometimes another one is....
+
+#first, lets start with while loop, its simple to understand
+
+count = 0
+while count<10:
+    print("Love you!")
+    count = count+1
+    #count +=1
+
+#can you guess why I wrote this line? count+=1?meybe,if count=5,print love,then loop 5+1=6,still print love you untill >=10, hmm, you get the idea
+#if we don't write count +=1, means we are not increasing count, so it will never become 10, and then loop keep running infintly until the laptop crashes or pycharm stops
+#count += 1, is same as count = count+1, you can also write it like that..., so loop runs first, count is zero, but +1 is there,so it becomes 1, and runs again and so on, and reaches 10 and stops
+#ok?ok, let me show you.....can you see it keeps running?yeah, and now I run again with +1, it printed exactly 10 times....do you want to try it yourself?yeah 10 times, yea, nice..
+
+#lets do something interesting.....can you tell me how many days left for your birthday? are you counting?42, yes, 42....
+#lets make a date countdown....
+
+# def birthdaycountdown (days):
+#     day = days
+#     return day
+# totaldays = birthdaycountdown(42)
+# daycount = 0
+#
+# while daycount<totaldays:
+#     print(f"{daycount} days passed!")
+#     daycount +=1
+#
+# print("Happy Birthday Xiaoqing! ❤️")
+
+#wow, want to write something? I'm waiting.....meme🤣hhhhhi want learn it laternono, owh, later.....hunh? want to stop today?
+#nono,i meam i am curcious how the emoticon appear here, haha....nice...
+# .so, since your birtday is so long and if we put seconds, it will take forever to run...so, we use days, instead of seconds, hhaha, want to run?oh,it appeared happy birthday
+#something wrong? no, nothing is wrong, since machine doesn't know differnce between days or seconds, it works on execution...haha, so, the function was just to demonstrate.....
+#it won't take 42 days to run....for you and me, its days, but for machine its just a number....umm, if you want to simulate it, I have something, that I leared before....
+#let me paste....
+import time
+
+def birthdaycountdown(days):
+    seconds = int(days * 24 * 60 * 60)
+    return seconds
+
+total_seconds = birthdaycountdown(42)  # ~86 seconds for demo, now real 42 days simulation...
+secondcount = 0
+
+while secondcount < total_seconds:
+    print(f"{secondcount + 1} seconds passed...")
+    time.sleep(1)  # pause for 1 second
+    secondcount += 1
+
+print("🎉 Happy Birthday, Xiaoqing! 🎂")
+
+#did you see? it works on real time...because it imports time from your laptop, haha, and we simulated for 86 seconds......if we do complete 42 days, it will keep running until your birthday....haha
+#got it?emm......it will now run for 42 days....haha, because I changed days to 42....hhh,see it,, want to wait it finish?😅🤣....
+# hhhhhhh,why you can use emotion (emoji), because windows have a shortcut, window key + . (so, it will show a box for gifs, stickers and emoji's), haha, idk if mac have it.....oh,no,🥹，, owh you can use it.......hhhhhhh, CooL🤣，but just i use pinyin拼音，hhhh, got it miss👏👌hhhh, got it....I want to eat dinner....🫶🏼☠️，and i will learn "for"tommorrow,hhh....okay, since you are on periods .....byebyebye💗love you
