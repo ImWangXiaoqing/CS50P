@@ -135,15 +135,15 @@
 # greeting("nitish", "Xiaoqing") #got it?yep, good, now, write your own function....try to play with it......
 
 
-def praise(name):
-    print(f"你真棒，{name}")
-
-praise("xiaoqing") # CooL, you are awesome Xiaoqing....hhhhh,hhhh, understood?yeah, write one more function while using 4 outside variables, this is your task.let me try,
-# sure...!
-def register(name,age,sex,nationality):
-    print (f"基本信息：{name} {age} {sex} {nationality}")#here?, no...
-
-register("王小青", "18", "女", "中国")#why , you are not using "," between variables, here............!like this?, haha, like this.got it, good....
+# def praise(name):
+#     print(f"你真棒，{name}")
+#
+# praise("xiaoqing") # CooL, you are awesome Xiaoqing....hhhhh,hhhh, understood?yeah, write one more function while using 4 outside variables, this is your task.let me try,
+# # sure...!
+# def register(name,age,sex,nationality):
+#     print (f"基本信息：{name} {age} {sex} {nationality}")#here?, no...
+#
+# register("王小青", "18", "女", "中国")#why , you are not using "," between variables, here............!like this?, haha, like this.got it, good....
 
 #you have made 2 mistakes, find & rectify them, now you get some idea, how code is used in services, techonolgies, and what it can do in real life tasks?yep,def and use
 
@@ -168,17 +168,17 @@ register("王小青", "18", "女", "中国")#why , you are not using "," between
 
 #another example, lets say, North Korea allows child marriages, but other countries don't, so, lets write for this condtion
 
-def checkeligibility(age, country):
-    if country == "North Korea":
-        return "Yes, Since you are north korean, you can get married"
-    elif age > 21:
-        return "Yes, You can get married, you are above 21"
-    elif age<21:
-        return "You can't get married!"
+# def checkeligibility(age, country):
+#     if country == "North Korea":
+#         return "Yes, Since you are north korean, you can get married"
+#     elif age > 21:
+#         return "Yes, You can get married, you are above 21"
+#     elif age<21:
+#         return "You can't get married!"
 
 #eligibilitystatus = checkeligibility(19, "North Korea")ok
-eligibilitystatus = checkeligibility(19, "China")
-print(eligibilitystatus)
+# eligibilitystatus = checkeligibility(19, "China")
+# print(eligibilitystatus)
 #got it , good......so, you understand, these are very helpful....emm i remmember “if” can use in 循环语句, yes, loops are there too, if and else can be used anywhere depending on needs..
 #got it, okay, since you have mentioned loops, lets learn them....but first lets understand, "and" and "or" operations
 
@@ -186,36 +186,36 @@ print(eligibilitystatus)
 #and is used to define, both, means, if some condition is fulfilling two or more conditons, lets say, you will only get married to someone, if you have a business and above age of 25
 #and you will get married, if you are either older than 25 or have business irrespctive of age.....
 
-def canigetmarried(age, occupation):
-    if age>=25 and occupation=="business": #here, I'm saying, only get married if both condition are fulfilling, otherwise don't, so "and" needs both conditions to be true.
-        return "yes, you can get married!"
-    else:
-        return "you can't get married"
-cangetmarriedornot = canigetmarried(25, "business")
-
-print(cangetmarriedornot)
-
-def anotherexample(age, occupation):
-    if age>=25 or occupation=="business": #here, I am saying if any of these 2 condtion is true, you are good to get married, so "or" gets used in these type of conditions.....
-        return "yes, you can get married!"
-    else:
-        return "you can't get married"
-
-exampleresult = anotherexample(19, "business")
-print(exampleresult) #okay?ok....
+# def canigetmarried(age, occupation):
+#     if age>=25 and occupation=="business": #here, I'm saying, only get married if both condition are fulfilling, otherwise don't, so "and" needs both conditions to be true.
+#         return "yes, you can get married!"
+#     else:
+#         return "you can't get married"
+# cangetmarriedornot = canigetmarried(25, "business")
+#
+# print(cangetmarriedornot)
+#
+# def anotherexample(age, occupation):
+#     if age>=25 or occupation=="business": #here, I am saying if any of these 2 condtion is true, you are good to get married, so "or" gets used in these type of conditions.....
+#         return "yes, you can get married!"
+#     else:
+#         return "you can't get married"
+#
+# exampleresult = anotherexample(19, "business")
+# print(exampleresult) #okay?ok....
 
 #Task: Write a function, that check the eligibility to apply for VISA for different countries
 #Task requirement: Only let the user apply if he is applying to India, China, Germany and Switzerland, and also, he/she must be 18 years old....otherwise, return "you can't apply";what wrong, I think connection got lost...
 #write now...
 #do it...feel free to ask any clarifications
-def canapplyvisa(age,country):
-    if age>=18 and (country=="India" or country=="China" or country=="Germany" or country=="Switzerland"):    #wrong? yes....why, think for a min, make use of "or" for diff countries, you can't just write directl
-        return "yes,you can apply"
-    else:
-        return"you can't apply"
-
-example=canapplyvisa(18,"India") #oh,no how to copy words use keyboard, in Mac you can use, "Command + C" to copy and "Command+V" to pastei  i do it but appear something wrong,you see, yes, I saw...I don't know what happened, but I will check and tell you later....ok
-print(example)
+# def canapplyvisa(age,country):
+#     if age>=18 and (country=="India" or country=="China" or country=="Germany" or country=="Switzerland"):    #wrong? yes....why, think for a min, make use of "or" for diff countries, you can't just write directl
+#         return "yes,you can apply"
+#     else:
+#         return"you can't apply"
+#
+# example=canapplyvisa(18,"India") #oh,no how to copy words use keyboard, in Mac you can use, "Command + C" to copy and "Command+V" to pastei  i do it but appear something wrong,you see, yes, I saw...I don't know what happened, but I will check and tell you later....ok
+# print(example)
 #so, understood all concepts?I'm closing the session for now, going to eat dinner. will teach somethings later, are you ok with it?ok byebye i will miss you,hhhh, hhhhh, thank you!
 
 
@@ -245,7 +245,7 @@ print(example)
 #first, lets start with while loop, its simple to understand
 
 count = 0
-while count<10:
+while count<3:
     print("Love you!")
     count = count+1
     #count +=1
@@ -278,20 +278,164 @@ while count<10:
 #let me paste....
 import time
 
-def birthdaycountdown(days):
-    seconds = int(days * 24 * 60 * 60)
-    return seconds
-
-total_seconds = birthdaycountdown(42)  # ~86 seconds for demo, now real 42 days simulation...
-secondcount = 0
-
-while secondcount < total_seconds:
-    print(f"{secondcount + 1} seconds passed...")
-    time.sleep(1)  # pause for 1 second
-    secondcount += 1
-
-print("🎉 Happy Birthday, Xiaoqing! 🎂")
+# def birthdaycountdown(days):
+#     seconds = int(days * 24 * 60 * 60)
+#     return seconds
+#
+# total_seconds = birthdaycountdown(42)  # ~86 seconds for demo, now real 42 days simulation...
+# secondcount = 0
+#
+# while secondcount < total_seconds:
+#     print(f"{secondcount + 1} seconds passed...")
+#     time.sleep(1)  # pause for 1 second
+#     secondcount += 1
+#
+# print("🎉 Happy Birthday, Xiaoqing! 🎂")
 
 #did you see? it works on real time...because it imports time from your laptop, haha, and we simulated for 86 seconds......if we do complete 42 days, it will keep running until your birthday....haha
 #got it?emm......it will now run for 42 days....haha, because I changed days to 42....hhh,see it,, want to wait it finish?😅🤣....
 # hhhhhhh,why you can use emotion (emoji), because windows have a shortcut, window key + . (so, it will show a box for gifs, stickers and emoji's), haha, idk if mac have it.....oh,no,🥹，, owh you can use it.......hhhhhhh, CooL🤣，but just i use pinyin拼音，hhhh, got it miss👏👌hhhh, got it....I want to eat dinner....🫶🏼☠️，and i will learn "for"tommorrow,hhh....okay, since you are on periods .....byebyebye💗love you
+
+
+
+
+#____________________FOR LOOP__________________#
+#so, should we start?yep, okay....emm, you have reviewed everything before, right?emm...learn from the 视频，
+#ok
+
+#So, A for loop, lets you repeat something to a fixed number of time, its useful when you know the number of times you need to traverse.
+#or in range, lets say, you have box, with 8 items, so go through all of them, till range.....
+
+#just for clraification, range in programming starts from 0, not 1, so, when I say index till 8, that means, 0-8, means 9 indexs in total.
+
+#got it?wait got it....you will understand more by examples....
+
+#lets understand basic structure:
+#for i in range(5):#what is "i" doing? "i" is basically a pointer, do you know, when we were child, we used to put our finger under words, while reading them? that's exactly same, i is everything inside range, but takes one at a time, I will teach it well....ok
+    #print("Hello Xiaoqing!")
+
+#here, range takes a number, until which the loop will run, so this will 5 times, means, 0,1,2,3,4.....and then stop,got it
+
+# for i in range(5):
+#     print("Loop is running!")
+#     print(f"Right now: i is at {i}")#i didnt understand f",{}"why need add it , f is to tell python that there is a foreign object is coming in this, between string, and {} handles it, and seperates from string, so, that it can be executed well with stirng., so, f told there is something from outside, and {} takes it from outside, and print alongside with string.
+#     print("This is end of this round")
+#ok, okay, see the output, you will understand the loop as well as relevance of i as a pointer为啥运行后顺序不一样, emm, order is same, where is it diff?sorry saw wrong, ok ok....
+#got it?take your time to go through,got it, okay....lets see, what other things we can out in range()
+
+# for i in range(1, 6):
+#     print(f"Right now: i is at {i}")
+
+#here, if we put twp numbers, it will run, between them, it will inlcude first number, lets say we have put (a,b). so, it will run from a to b-1, okay?ok
+#loop will always run, (b-a) times, got it
+
+#here we have another variation
+
+for i in range(1,10,2):
+    print(f"Right now: i is at {i}")
+
+#this takes 3, (a,b,c), a is start point runs till b-1, and c is steps, means, it will run from 1 to 9, but with a gap of 2...1 3 5 7 9? yes yes....run the code, and you will see
+#ok, okay, my internet disconnect for a few moments, hhh....sorry,hhh,i see a icon to call, hunh? option to call? owh, yes, via this we can call, and share screen as well..
+#wow, want to try?but you maybe also need make texts here,i cant promise understand what you say,ha h owh, okay....we can try and if not works well, will end
+
+#so, these were
+#let me go to friend's room, because he is in class....hhh,ok,ok?yes, done...emm...anything wrong?speak something...can you hear ?
+# nope...can you hear me?i can hear you ,but you cant hear , maybe your microphone is off....try turning it on, from settings
+#i can hear , nice....you speak something as well.,can hear me now?nope....why, idk....why....wait, let me remove my earbuds, speak something,i say, hhh, nope....
+#what wrong ?why why why , no idea....ok,there ies other way maybe ,we can talk by qq...owh, okay...maybe, let me end call here...
+#you also leave the call...,go on ? umm, okay....are you alone in dorm today?umm, my throat is bit bad today, don't mind,emm...
+
+#lets take word Xiaoqing....
+for letter in "Xiaoqing":
+    print(letter)
+#write the output here: hhh, why your voice is so low....hhhhh🤣 🤣so funny....hhhh
+#so, so, output will look like: X, i, a, o ,q, i, n and g,anything wrong?i cant hear you clearly,texts please....hh, I'm saying, try to run the file again, you will
+#lets start with nested loops:
+
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(f"{i}x{j} = {i*j}")
+#what ?  you first had to run it own your own, in mind, without using computer...hhhh, so you will understand it better,got it
+
+#okay, so, you understood, how this nested loop is working? like completely....??hhhh, our talking is so funny🤣
+#owh, okay....let do a dry run for you, dry run means, doing something before running the code, step by step to understand the flow
+
+#, outer loop runs first, with 1, inner loop runs then, 1, so output becomes, 1*1=1
+#similarly, outer loop runs first, with 1, inner loop runs then, 2, so output becomes, 1*2=2
+#similarly, outer loop runs first, with 1, inner loop runs then, 3, so output becomes, 1*3=3
+
+#, outer loop runs second, with 2, inner loop runs then, 1, so output becomes, 2*1=2
+#similarly, outer loop runs second, with 2, inner loop runs then, 2, so output becomes, 2*2=4
+#similarly, outer loop runs first, with 2, inner loop runs then, 3, so output becomes, 2*3=6
+
+#, outer loop runs third, with 3, inner loop runs then, 1, so output becomes, 3*1=3
+#similarly, outer loop runs third, with 3, inner loop runs then, 2, so output becomes, 3*2=6
+#similarly, outer loop runs third, with 3, inner loop runs then, 3, so output becomes, 3*3=9
+
+#good...hhhh, you are so smart as well....hhhh
+
+#hhhhh, no no....
+
+#_________________________lists_____________________#
+#lets learn list and we will work with it with other things, like function, loops etc....
+#list are nothing but, a set of multiple items, like list of food items....how to use it
+
+#in python, we can make lists like this:
+gifts = ["flower","heart","love","car","hug"]
+#so, this right here is a list of gifts, lets say I want to give you....we can put as many items in it as we want...ook
+
+# to access the elements inside the list, you use indexes, you know what are indexes?
+#indexes get assigned automatically, from left to right, in every list, for examples, flower is at index, 0, and hug is at index, 4, ok?
+print(gifts[0])
+print(gifts[2])
+
+#got it?hhhh...so, we can change the items in it as well...like
+gifts[2] = "bed"
+
+#print(gifts) #see, now it have bed instead of love, got it?.....hhh. thanks for correction.....nice...
+#we can also add items
+gifts.append("ring")#texts please, okay, append is a method, by which you can add items in your list...
+print(gifts) #got it? cool....if i want to add something among flower and heart , owh, we can do that...
+
+gifts.insert(1, "cat") #got it? so, insert takes two things, one is index where we want to add, and what we want to add...
+print(gifts)
+
+#we can also remove
+gifts.remove("flower") #this is to remove an item.got it, okay...
+print(gifts)
+
+#we can also loop through the list
+
+for gift in gifts:
+    print(gift)
+
+#got it? we can print gifts using it...using loop to iterate over gift items. got it?hhh, maybe...umm, okay...
+
+#if you want to print with respect to each index, we have a method "enumerate()"
+#this will output both, index and value at that index
+
+for index, gift in enumerate(gifts):
+    print(f"this {gift} is at index {index}")
+
+#got it? what are you saying?got it nice....umm, your roommates are in room?yep, hhh, are you sitting in table?.no,on my bed, why not study on table?messy
+#private space .....hhhh, okay...your friend might see you learning python...hhhh, maybe get jealous
+#hunh? what did you say? the lunch is in main campus today, because of classes, I will have it at 12:30...
+
+#umm, one more example:
+compliments = ["smart", "loving", "kind", "curious"]
+
+for i in compliments:
+    print(f"Xiaoqing is {i}")
+
+#got it?okay, got it
+
+#example with numbers:
+nums = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+sum = 0
+for i in nums:
+    sum += i
+    #sum = sum+i#sum+=i, yes we can do this as well...see, same result...got it
+print(sum) #see, we can do operations as well.
+
+#umm, I think this is enough for now, I have to shower and eat before class.....umm, I can show you how I push to github...I'm sharing the screen.here, can you see the screen?no, click on call in pycharm and open call window, you can see it there...
+#no?
