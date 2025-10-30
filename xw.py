@@ -438,4 +438,120 @@ for i in nums:
 print(sum) #see, we can do operations as well.
 
 #umm, I think this is enough for now, I have to shower and eat before class.....umm, I can show you how I push to github...I'm sharing the screen.here, can you see the screen?no, click on call in pycharm and open call window, you can see it there...
-#no?
+#no?here
+
+#____________________________Welcome__________________________#
+# can you wait for 5 mins? just 5....sure
+#back...ok.here
+
+#today, we will first learn slicing.....it is helpful for getting some specific items from a list, without afffecting whole list
+#there are multiple ways, like via indexing or negative indexing...its same as cutting a loaf of bread from a complete bread....just via clean code, so that we don't have to change the whole list
+#It helps us preserve the original list, Example
+
+#newlist = ["socks", "undergarments", "buttons", "keyboard", "book", "school", "pencil"]
+#so, we can write this to slice, you have written ratios, right?1:2, 3:5 etc???emm, mathematics ratios....100/500, can be written as 1:5, means numerator is 1/5 of denominator
+#got it, yes, so we can use the ratio method to get the part of a list
+
+#print(newlist[1:3]) #this means range,  this will print, items from index 1 to 3, similarly there are multiple methods
+#print(newlist[:3]) #this means count from start, means index 0 to 2
+#print(newlist[5:]) #also count from back, index, index 2 to 6, inclusive of both....this why start from 2, emm, it starts from 5th index, counted form ending, like, seven indexes
+#let me explain by examople: a = [10,20,30,40,50,60,70], using [5:] will give ans as [60,70] only
+#but [-5:] = will give, [30,40,50,60,70]....
+
+#do you know inclusive and exclusive ranges? no, inclusive means, including the leftmost and rightmost, means, in range of 2-6, we are including 2 and 6 as well with 3,4,5
+#and in exclusive, we don't, it remains, 3,4,5, so these methods work in inclusive...got it, okay, few more mthods are there.
+
+#print(newlist[::2]) #this means, step, means, take every second index, means, index, 0,2,4,6 etc.... ok
+#print(newlist[1::2]) #means first number is deciding start index from left, and then step by 2, so since it is 1, we leave one index, which is 0, and then we do, 1,3,5,7 etc, got it?yep
+#we also have negative indexes
+#print(newlist[-3:]) #means, print last 3....its same, but a little diff, no specific usecase,this.give me an example, [1,2,3,4,5,6,7,8,9] , applying on this will give, [7,8,9],
+# owh, I just got the context why you are asking, because I just told you that - reverse, but, its not always true, emm, it depends on the colons,
+# if we have dual "::" colons then reverse works, otherwise it starts from last, but in increasing indexes, like, 3 but from last, 7,8,9 not 9,8,7, ::-3 will give this. sorry for confusion
+#we can also reverse a list directly
+#print(newlist[::-1]) #this will completely covert the list, 0 to 7, 6-1,5-2,4-3....etc...wait , okay, you didn't understand this?yea, here I'm writing that,
+# lets say we have 8 elements in a list, 0 becomes index 7, 1 becomes index 6, 2 becomes index 6, and so on....just reversed, example, we have [1,2,3,4,5] becomes [5,4,3,2,1]
+#print(newlist[::-2])#what is diff , this will also do stepping, but from ending, like, we have [1,2,3,4,5] and if we use [::2] it will do, 1,3,4 and [::-2] will do, 5,3,1, ok
+#so "-"just 颠倒顺序, yes, it just reverses the order...got it
+#why we use slicing, when we can do same thing by combining loops and range methods, because this clean, modular, more easier to edit aftee implementation as well directly reverse, without
+#extra effort and less lines of code....
+
+#should we move ahead?ok, sorry for confusion, try not to do it again....I could have explained better.hhh.nothing.i can find what i cant understand ,and you will express,so i can understand it better
+
+#okay, happy happy 🫶🏼....you may ask again if you don't understand....ok
+
+#_______________key value pairs_____________#
+#so, let say, you have birthday, and you are inviting your friends, but you need complete details about them, so, how do you arrange it in a list,
+#like previously, when you only needed name, you can make a list, like [nitish, wxq, Jay chou, jack ma, Xi jinping] so, these are arriving at the party of yours, here you can store directly in list
+#you also need extra details about each person, then how do you store it with everyname....? then there comes concept of key-value pairing system
+
+#so, do you understand the problem we have currently?need add some details about each person,like age , yes, age, profession etc things...take your time to process...
+#so how to write by key value pairs,what is key?
+
+#so, first of all, we have a existing solution from what we have learnt yet, its is like, we want to save 2 things, we make 2 list of same length
+#[nitish, wxq, Jay chou, jack ma, Xi jinping] and make another list, [student, student, Singer , Founder/Entrepreneur, President] ,jay chou is singer, right?yep周杰伦
+
+#so, we have this solution, but this is not very good, we have to create and maintain new lists, if we want to store more items, or details, not very good solution, right?yep
+#so, we came up with a new solution....key value pairs....
+
+# we can make use of them....lets see examples: first, lets understand key value concept
+
+# we make a dictionary like thing, that is very similar to dictionary.
+
+#remembeer, when writing key value pairs, we use {} curly brackets...
+# exampledictionary = {}
+#     "key1":value1,
+#     "key2":value2
+# understand? we store them like this, this allow us to maintain details at one place, how? this we will see....got it till here?yep, okay...
+
+wxq = {
+    "name":"Xiaoqing",
+    "age":18,
+    "country":"china",
+    "profession":"student",
+    "contact":{"email":"wxq@gmail.com", "number":"1234567890"}
+}
+#got it? we can write like this....got it, okay....so, like this we can make multiple such profiles....and access it, let me show you how...
+print(wxq["country"]) #this will give me country of wxq...so, in the key-value pairs, we saved the value as china against country, right? so, this gives us the value, using the key...ok?ok
+
+#so, how does this solve our problem? we can make use of nested key value pairs....emm, first understand one more example:
+#so, we have this, now, I want to get contact number of wxq, not email, only contact number,then how do we get it?
+print(wxq["contact"])#how to add number in it ...so, like you wrote wxq then contact, means contact is inside wxq, and now, number is inside contact, we can do something similar
+
+print(wxq["contact"]["number"]) #we can do same....and keep going inside...why cant write like this :print(wxq["contact"["number "]])
+#hmm, I see how you are thinking, you are saying sinde, number is inside contact, we wrote it outside, the reason is scope, we have to take care of scope. scope is nothing but a boundary where each thing can be accessed.
+#so, you first wrote wxq["contact"] means you are saying get the value of the key contact inside wxq, so, when we write "contact"["number"] then we are basically saying, get the value at key number, but key and values don't work like that
+#they also work on indexes....like, we used to get the value in list as, for example, we have a list, numbers = [1,2,3,4,5], so, when we call, numbers[0] = 1, so, it expects a index inside, [], thus we can't paas a string inside, it expects a index or integer.
+#got the idea? leave the scope for now....try to understand without it...got it maybe, are you sure? you may ask questions, promise you understand this?hhh, don't add maybe...emm, let me give example
+
+#listA = [nitish, xiaoqing, personA, personB], so how do we write if we want name on index 1, listA[1], this will give us "xiaoqing", but you were saying why can't we write contact["number"]
+#but python only excepts number in such situations, it will give string error... "string must be integers" it will give this error,okk understood?...
+#please let me know if you have any questions....feel free,ok, okay...
+
+
+#your task, make profile of yourself, where you have two email provider, google and qq and from each provider you have 2 emails, can you write it?just write contact ?emm,yea...
+contact = {
+    "number":"19329269209",
+    "email":{"google":{"email1":"wxq@gmail.com", "email2":"wqx@gmail.com"},"qq":{"email1":"wxq1013922@qq.com", "email2":"wqx1013922@qq.com"}}#what is wrong? you forgot "," after writing one key value pair, you must write ","ok, done?yeah
+
+}
+#are you sure?emm...no, emm, no? why do you think so? read the task again, yes, 2 from each provider....should I write it for you?i think i need,okay
+#like you make a key value pair inside email, we can make same for google....got it?hhh, both are diff...don't worry and even if the value is same, there is no problem,
+# the key must be unique only..ok.got it, nice....
+
+#so, now we can come back to our birthday problem, since now we can make profile of each birthday friend and save each profile into a list of key-value pairs...
+
+invitations = [
+    {"name":"Nitish", "age":20, "profession":"student"},
+    {"name":"Xiaoqing", "age":18, "profession":"student"},
+    {"name":"Jay chou", "age":50, "profession":"singer"},
+    {"name":"Jack ma", "age":70, "profession":"founder of alibaba"},
+    {"name":"Xi jinping", "age":65, "profession":"president"}
+]
+
+#got it? we saved all the participants of the birthday party in one list, previously, we were only able to store only names, now, we can save all others details as well....
+#we can access details like:
+for invitation in invitations:
+    print(f"{invitation['name']} is a {invitation['profession']} aged {invitation['age']}")
+
+#did you understand it xioaqing? take your time...ok, got it? really...?i think so, okay....would you like to do a task?i want to sleep🥱, emm...alright...leave a task as my homework, okay, I will,thannk you ♥️,hhhh, welcome....
+#what are you thiking? wanna say something?wait my homework...😄 don't worry, I won't forget it...can i update it in m
