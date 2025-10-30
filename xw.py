@@ -554,4 +554,8 @@ for invitation in invitations:
     print(f"{invitation['name']} is a {invitation['profession']} aged {invitation['age']}")
 
 #did you understand it xioaqing? take your time...ok, got it? really...?i think so, okay....would you like to do a task?i want to sleep🥱, emm...alright...leave a task as my homework, okay, I will,thannk you ♥️,hhhh, welcome....
-#what are you thiking? wanna say something?wait my homework...😄 don't worry, I won't forget it...can i update it in mine now, yes, you can....try it.emm...dont work, this will work in yours, this is mine, you will get the code currently written, you can again update in morning and you will get homework...close the pycharm, and open again and open the project of CS50P, then update....let me know via QQ if there are any issus, try it,ok
+#what are you thiking? wanna say something?wait my homework...😄 don't worry, I won't forget it...can i update it in mine now, yes, you can....try it.emm...dont work, this will work in yours, this is mine, you will get the code currently written,
+#you can again update in morning and you will get homework...close the pycharm, and open again and open the project of CS50P, then update....let me know via QQ if there are any issus, try it,ok
+
+
+#NOTE: I have shared HomeWork on QQ, let me know if you have any questions....! Good Morning!
